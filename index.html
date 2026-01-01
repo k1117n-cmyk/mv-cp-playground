@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>mv / cp Playground</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f6f6f6;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+    .box {
+      background: #fff;
+      padding: 15px;
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    }
+    .file {
+      padding: 5px;
+      margin: 5px 0;
+      background: #e0f0ff;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+    }
+    .message {
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>mv / cp Playground</h1>
+
+<div class="container">
+  <div class="box">
+    <h3>Playground</h3>
+    <div id="source"></div>
+  </div>
+
+  <div class="box">
+    <h3>Destination</h3>
+    <div id="dest"></div>
+  </div>
+</div>
+
+<button onclick="cp()">cp ▶</button>
+<button onclick="mv()">mv ▶</button>
+<button onclick="resetPlayground()">reset ⟲</button>
+
+<div class="message" id="message"></div>
+
+<script src="script.js"></script>
+<footer>
+  <p>
+    ☕ Learn more at
+    <a href="https://pc-fan.net/unix-cafe-2-v2/" target="_blank" rel="noopener">
+      UNIX Cafe
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>
+
